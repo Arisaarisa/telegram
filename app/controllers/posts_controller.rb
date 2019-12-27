@@ -1,17 +1,18 @@
 class PostsController < ApplicationController
 
   def new
-    @post = Post.new #フォーム用の空のインスタンスを引数に
+    @post = Post.new #フォーム用の空のインスタンスを生成する
   end
   
   def create
+    @post = Post.new(post_params) #ストロングパラメーターを引数に
     @post.save #saveをしてデータベースに保存する。
-    redairect_to @post #showページにリダイレクト
+    redirect_to @post #showページにリダイレクト
   end
 
   private
 
   def post_params #ストロングパラメータを定義する
-    params.require(:post).permit(:caption)
+    params.require(:post).permit(:caption, :new_image)
   end
 end
