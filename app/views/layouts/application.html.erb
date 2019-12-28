@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Telegram</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Telegram</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <%= render "shared/header" %>
-    <div class="container md-5">
+    <body>
+      <%= render "shared/header" %>
+      <div class="container mb-5">
       <div class="row">
         <div class="col-md-12">
           <%= render "shared/flash" %>
         </div>
       </div>
-      <div class="row">
-        <%= yield %>
+        <div class="row">
+          <%= yield %>
+        </div>
       </div>
-    </div>
-    <%= render "shared/footer" %>
-  </body>
-</html>
+      <%= render "shared/footer" %>
+    </body>
+  </html>
