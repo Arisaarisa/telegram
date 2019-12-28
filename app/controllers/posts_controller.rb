@@ -40,9 +40,9 @@ class PostsController < ApplicationController
     redirect_to posts_path, notice: "投稿を削除しました。"
   end
 
-    private
+  private
 
-    def post_params # ストロングパラメータを定義する
+  def post_params # ストロングパラメータを定義する
       params.require(:post).permit(:caption, :new_image)
-    end
   end
+end

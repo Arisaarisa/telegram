@@ -21,4 +21,4 @@ class Post < ApplicationRecord
     self.image = new_image if new_image
   end
 
-  end
+end
