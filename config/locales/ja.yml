@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        avatar: プロフィール画像
+        dircription: 自己紹介
+        email: メールアドレス
+        name: 名前
+        new_avatar: プロフィール画僧
+        password: パスワード
+        username: ユーザー名
